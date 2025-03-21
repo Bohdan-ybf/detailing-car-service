@@ -31,6 +31,10 @@
     font-size: 16px;
 }
 
+.navbar-nav>.nav-link:hover {
+    color: #125DF0;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 20px;
     padding-left: 20px;
@@ -182,6 +186,10 @@
     position: relative;
     height: 480px;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .our_services_slide img {
@@ -201,15 +209,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 40%));
-    /* Пример градиента */
+    background: linear-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 60%));
     pointer-events: none;
-    /* Чтобы сделать изображение кликабельным */
 }
 
 .our_services_slide:hover:before {
-    background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%));
-    /* Пример градиента */
+    background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 70%));
+
 
 }
 
@@ -217,6 +223,19 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+.our_services_slide_info_title {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.our_services_slide_info_text {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 100;
 }
 
 /* END our services */
@@ -242,7 +261,7 @@
     opacity: 75%;
 }
 
-@keyframes marquee {
+/* @keyframes marquee {
     0% {
         transform: translate(0, 0);
     }
@@ -250,7 +269,7 @@
     100% {
         transform: translate(-100%, 0);
     }
-}
+} */
 
 /*  END marquee */
 
@@ -273,6 +292,8 @@
 
 .why_us_up_text {
     font-size: 16px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .why_us_wrapper {
@@ -324,6 +345,88 @@
 }
 
 /* END why_us */
+
+/* Спецпропозиції */
+.section_special_offers {
+    padding: 100px 0 150px;
+}
+
+.special_offers_title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.special_offers_text {
+    text-align: center;
+    font-weight: 200;
+}
+
+.special_offers_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.special_offers_box {
+    position: relative;
+}
+
+.special_offers_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.special_offers_name {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    z-index: 12223323;
+    padding: 0 10px;
+    background: #17181A;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.special_offers_data {
+    font-weight: 100;
+    opacity: 70%;
+}
+
+/* END Спецпропозиції */
+
+/* prew_pictures */
+.section_prew_pictures {
+    padding: 150px 0 150px;
+    background-color: #17181A;
+}
+
+.prew_pictures_slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.prew_pictures_slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* END prew_pictures */
 
 
 
@@ -404,7 +507,7 @@
     height: 25px;
 }
 
-.footer_item:hover {
+.footer_social_item:hover {
     opacity: 75%;
 }
 
