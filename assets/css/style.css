@@ -33,14 +33,16 @@ body {
 }
 
 .btn_close_offcanvas {
-    width: 35px;
+    width: 100%;
     height: 35px;
+    max-width: 35px;
     border: none;
     border-radius: 50%;
     background-color: rgb(255 255 255 / 25%);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 10px;
 }
 
 .btn_close_offcanvas:hover {
@@ -499,6 +501,9 @@ body {
 
 .special_offers_box {
     position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 .special_offers_img {
@@ -521,12 +526,20 @@ body {
     z-index: 1;
     padding: 0 10px;
     background: #17181A;
+    color: #FFFEFE;
     align-items: center;
+    text-align: left;
     border-radius: 3px;
 }
 
 .special_offers_data {
     font-weight: 100;
+    opacity: 70%;
+    color: #FFFEFE;
+    text-align: left;
+}
+
+button.special_offers_box:hover {
     opacity: 70%;
 }
 
@@ -633,7 +646,60 @@ body {
 
 /* END Contact */
 
+/* Actions */
+.actions_banner {
+    height: 40vh;
+    margin-bottom: 0;
+}
 
+.actions_banner img {
+    object-position: center;
+}
+
+.actions_modal-dialog {
+    max-width: 850px;
+}
+
+.actions_modal-content {
+    background-color: #333333;
+}
+
+.actions_modal_img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.actions_modal-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.actions_modal_text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+.actions_modal_btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background: #505050;
+    color: #FFFEFE;
+    padding: 10px;
+    transition: all ease .2s;
+}
+
+.actions_modal_btn:hover {
+    background: #2c2c2c;
+    color: #FFFEFE;
+    text-decoration: none;
+}
+
+/* END Actions */
 
 /* END Main */
 
@@ -825,6 +891,10 @@ body {
 
     .contact_banner {
         margin-bottom: 10px;
+    }
+
+    .actions_modal_img {
+        height: 200px;
     }
 
 }
