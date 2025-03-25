@@ -110,6 +110,10 @@ body {
 
 }
 
+.navbar.navbar-expand-xl {
+    padding: 20px 0;
+}
+
 .navbar-expand-xl .navbar-collapse {
     justify-content: space-between;
 }
@@ -780,6 +784,24 @@ gap: 20px;
     object-fit: cover;
 }
 
+.swiper_about_img {
+    width: 100%;
+}
+
+.swiper-slide.swiper_about_slide {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active.swiper_about_slide {
+    opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #FFFEFE;
+}
+
 /* END About */
 
 /* END Main */
@@ -895,6 +917,30 @@ gap: 20px;
     .contact_map {
         height: 30vh;
     }
+
+    .advantages_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advantages_text {
+        text-align: center;
+    }
+
+    .section_about_map>a {
+        height: 40vh;
+    }
+
+    .section_about {
+        margin: 40px 0 80px;
+    }
+
+    .section_advantages {
+        padding: 80px 0 80px;
+    }
+
+    .advantages_number {
+        font-size: 75px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -976,6 +1022,21 @@ gap: 20px;
 
     .actions_modal_img {
         height: 200px;
+    }
+
+    .advantages_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages_title {
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .about_text {
+        font-size: 18px;
+        line-height: normal;
     }
 
 }

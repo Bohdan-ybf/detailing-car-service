@@ -7,6 +7,7 @@
     
         <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lightgallery-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/reset.css">
         <link rel="stylesheet" href="../assets/css/style.css">
     
@@ -146,24 +147,27 @@
                             очищення та догляд за автомобілями, спрямований на відновлення їх естетичного вигляду і
                             забезпечення довговічності.</p>
                     </div>
-                    <div class="swiper about_swiper prewPictures">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide prew_pictures_slide">
-                                <img src="../assets/images/about.JPG" />
-                            </div>
-                            <div class="swiper-slide prew_pictures_slide">
-                                <img src="../assets/images/about.JPG" />
-                            </div>
-                            <div class="swiper-slide prew_pictures_slide">
-                                <img src="../assets/images/about.JPG" />
-                            </div>
-                            <div class="swiper-slide prew_pictures_slide">
-                                <img src="../assets/images/about.JPG" />
-                            </div>
-                            <div class="swiper-slide prew_pictures_slide">
-                                <img src="../assets/images/about.JPG" />
-                            </div>
+
+
+        
+
+                    <div class="swiper swiperAbout">
+                        <div class="swiper-wrapper" id="light-gallery-show">
+                            <a class="swiper-slide swiper_about_slide" href="../assets/images/about.JPG">
+                                <img class="swiper_about_img" src="../assets/images/about.JPG" />
+                            </a>
+                            <a class="swiper-slide swiper_about_slide" href="../assets/images/about.JPG">
+                                <img class="swiper_about_img" src="../assets/images/about.JPG" />
+                            </a>
+                            <a class="swiper-slide swiper_about_slide" href="../assets/images/about.JPG">
+                                <img class="swiper_about_img" src="../assets/images/about.JPG" />
+                            </a>
+                            <a class="swiper-slide swiper_about_slide" href="../assets/images/about.JPG">
+                                <img class="swiper_about_img" src="../assets/images/about.JPG" />
+                            </a>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
@@ -206,6 +210,7 @@
             <a href="https://maps.app.goo.gl/8EqnQNtrmBPAEM4U9" target="_blank"><img src="../assets/images/map.jpg"
                     alt=""></a>
         </section>
+
 
     </main>
 
@@ -294,6 +299,7 @@
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/lightgallery.umd.min.js"></script>
 <script src="../assets/js/main.js"></script>
 
 

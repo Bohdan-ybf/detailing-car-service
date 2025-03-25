@@ -34,3 +34,17 @@ var swiper = new Swiper(".ourServiceSlider", {
       slideShadows: true,
     },
   });
+
+
+  var swiper = new Swiper(".swiperAbout", {
+    slidesPerView: 2.1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  lightGallery(document.getElementById('light-gallery-show'));
