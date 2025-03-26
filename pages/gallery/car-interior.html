@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Галерея</title>
+        <title>Салон</title>
     
-        <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lightgallery-bundle.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/reset.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="navbar-nav header_logo_nav">
                         <a class="header_logo" href="/"><img class="header_logo_img"
-                                src="../assets/images/logo-service.png" alt=""></a>
+                                src="/assets/images/logo-service.png" alt=""></a>
                     </div>
                     <div class="navbar-nav header_tel_nav_bar">
 
@@ -139,7 +139,7 @@
     <main class="main">
 
         <section class="main_banner actions_banner">
-            <img src="../assets/images/gallery-bg.jpg" alt="">
+            <img src="/assets/images/salon-bg.jpg" alt="">
             <div class="main_banner_info">
                 <p class="main_banner_text">Галерея</p>
                 <!--  <p class="main_banner_bottom_text">Ми прагнемо завоювати вашу довіру, надаючи досвід та ціну, яку ви
@@ -147,26 +147,51 @@
             </div>
         </section>
 
-        <section class="section_galley">
+
+        <section class="section_gallery_mixed">
             <div class="container">
-                <p class="center_title">Оберіть категорію</p>
-                <div class="galley_catalog_wrapper">
-                    <div class="galley_catalog_box">
-                        <p class="galley_catalog_title">Кузов</p>
-                        <a class="galley_catalog_item" href="#">
-                            <img class="galley_catalog_first" src="../assets/images/icon-car-body.png" alt="">
-                        </a>
-                    </div>
-                    <div class="galley_catalog_box">
-                        <p class="galley_catalog_title">Салон</p>
-                        <a class="galley_catalog_item" href="#">
-                            <img class="galley_catalog_last" src="../assets/images/icon-salon.png" alt="">
-                        </a>
-                    </div>
+                <ol class="breadcrumb_wrapper" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="/pages/services/catalog.html">
+                          <span itemprop="name">Галерея</span></a>
+                      <meta itemprop="position" content="1" />
+                    </li>
+                    ›
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <span itemprop="name">Салон авто</span>
+                      <meta itemprop="position" content="2" />
+                    </li>
+                  </ol>
+                <h1 class="special_offers_title">Салон авто</h1>
+                <p class="special_offers_text">Естетика та функціональність</p>
+                <div class="gallery_mixed_wrapper" id="gallery-mixed-content-demo">
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                    <a class="gallery_mixed_item" href="/assets/images/test-salon.jpg">
+                        <img class="gallery_mixed_img" src="/assets/images/test-salon.jpg" />
+                    </a>
+                 
                 </div>
             </div>
         </section>
-
         
        
         
@@ -177,7 +202,7 @@
         <div class="container">
             <div class="footer_wrapper">
                 <ul class="footer_col">
-                    <li class="footer_title"><a href="#"><img src="../assets/images/logo-service.png" alt=""></a></li>
+                    <li class="footer_title"><a href="#"><img src="/assets/images/logo-service.png" alt=""></a></li>
                     <li class="footer_text">Detailing car service — це спеціалізований сервіс, що пропонує комплексне
                         очищення та догляд за автомобілями, спрямований на відновлення їх естетичного вигляду і
                         забезпечення довговічності.</li>
@@ -255,11 +280,11 @@
 </div>
 
 
-<script src="../assets/js/jquery.js"></script>
-<script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/lightgallery.umd.min.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 
 
 </body>

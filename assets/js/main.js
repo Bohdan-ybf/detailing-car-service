@@ -48,3 +48,6 @@ var swiper = new Swiper(".ourServiceSlider", {
   });
 
   lightGallery(document.getElementById('light-gallery-show'));
+
+
+  lightGallery(document.getElementById('gallery-mixed-content-demo'));
