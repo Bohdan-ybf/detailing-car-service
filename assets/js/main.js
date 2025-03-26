@@ -20,24 +20,8 @@ var swiper = new Swiper(".ourServiceSlider", {
   });
 
 
-  var swiper = new Swiper(".prewPictures", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-  });
-
-
   var swiper = new Swiper(".swiperAbout", {
-    slidesPerView: 2.1,
+    slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
@@ -45,6 +29,12 @@ var swiper = new Swiper(".ourServiceSlider", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      991: {
+          slidesPerView: 2.1,
+      }
+    }
   });
 
   lightGallery(document.getElementById('light-gallery-show'));
