@@ -148,8 +148,8 @@ body {
 }
 
 .navbar-toggler>svg {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -214,6 +214,31 @@ body {
 
 .header_tel:hover>svg>g>path {
     fill: #125DF0;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+
+    justify-content: flex-end;
+}
+
+
+
+.header_tel_nav_bar_mob {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav-mob-menu {
+    display: none;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /* END Header */
@@ -726,7 +751,7 @@ button.special_offers_box:hover {
     text-decoration: none;
 }
 
-.btn-w-50{ 
+.btn-w-50 {
     width: 50%;
 }
 
@@ -849,6 +874,7 @@ button.special_offers_box:hover {
 
 .galley_catalog_box {
     border: 1px solid #FFFEFE;
+    color: #FFFEFE;
     width: 100%;
     max-width: 500px;
     height: 400px;
@@ -858,6 +884,10 @@ button.special_offers_box:hover {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.galley_catalog_box:hover {
+    color: #FFFEFE;
 }
 
 .galley_catalog_box:hover {
@@ -1080,6 +1110,30 @@ button.special_offers_box:hover {
     .navbar-expand-lg {
         display: none;
     }
+
+    .navbar-nav-mob-menu {
+        display: flex;
+    }
+
+    .header_tel_nav_bar_desc {
+        display: none;
+    }
+
+    .offcanvas_button,
+    .header_logo {
+        display: none;
+    }
+
+    .navbar-nav>.nav-link {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .nav-link:first-child {
+        margin-top: 25px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -1142,7 +1196,7 @@ button.special_offers_box:hover {
     .swiperAbout .swiper-button-prev {
         left: 15px;
     }
-    
+
     .swiperAbout .swiper-button-next {
         right: 15px;
     }
@@ -1278,7 +1332,7 @@ button.special_offers_box:hover {
         height: 200px;
     }
 
-    .btn-w-50{ 
+    .btn-w-50 {
         width: 100%;
     }
 
