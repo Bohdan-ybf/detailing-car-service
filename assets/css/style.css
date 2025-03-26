@@ -37,6 +37,10 @@ body {
     color: #8b8b8b;
 }
 
+.navbar-expand-xl .navbar-nav .nav-link.active {
+    color: #125DF0;
+}
+
 /* END Global */
 
 /* offcanvas */
@@ -378,12 +382,14 @@ body {
     line-height: 22px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #FFFEFE;
 }
 
 .our_services_slide_info_text {
     font-size: 16px;
     line-height: normal;
     font-weight: 100;
+    color: #FFFEFE;
 }
 
 /* END our services */
@@ -739,6 +745,13 @@ gap: 20px;
     width: 100%;
 }
 
+.swiperAbout .swiper-button-prev{ 
+    left: 20%;
+}
+.swiperAbout .swiper-button-next{ 
+    right: 20%;
+}
+
 .about_box img {
     width: 50%;
     margin-bottom: 20px;
@@ -1038,6 +1051,8 @@ gap: 20px;
 
 .service_text {
     margin-bottom: 15px;
+    border-bottom: 1px solid rgb(18 93 240 / 50%);
+    padding-bottom: 25px;
 }
 
 .service_price_wrapepr {
