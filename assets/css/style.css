@@ -152,10 +152,9 @@ body {
     height: 35px;
 }
 
-
 .navbar-nav>.nav-link {
     color: #FFFEFE;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav>.nav-link:hover {
